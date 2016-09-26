@@ -20,6 +20,22 @@ if os.environ['USER'] in ['schoef', 'rschoefbeck', 'schoefbeck']:
     combineReleaseLocation = '/afs/hephy.at/work/r/rschoefbeck/CMS/tmp/CMSSW_7_1_5/src'
     runOnGentT2 = False
 
+if os.environ['USER'] in ['easilar']:
+    # Where you store cmg output (chunks)
+    cmg_directory      = "/scratch/rschoefbeck/cmgTuples/80X_1l_9"
+    # Where postprocessed data goes 
+    data_output_directory      = "/afs/hephy.at/data/easilar/cmgTuples/"
+    # Where you store the data (postporcessed)
+    data_directory      = "/afs/hephy.at/data/rschoefbeck02/cmgTuples/"
+    # Where the plots go
+    plot_directory      = "/afs/hephy.at/user/e/easilar/www/"
+    # Analysis result files
+    analysis_results    = '/afs/hephy.at/data/easilar01/StopsDilepton/results'
+    # directory with veto lists
+    veto_lists = "/afs/hephy.at/data/rschoefbeck01/StopsDilepton/vetoLists/"
+    # 715 release for limit calculation 
+    combineReleaseLocation = '/afs/hephy.at/work/r/rschoefbeck/CMS/tmp/CMSSW_7_1_5/src'
+    runOnGentT2 = False
 
 if os.environ['USER'] in ['tomc']:
     # Where you store cmg output
